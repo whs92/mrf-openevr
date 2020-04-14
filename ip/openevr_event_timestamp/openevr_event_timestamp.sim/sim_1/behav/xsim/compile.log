@@ -1,0 +1,129 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_timestamp
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sim_1/new/tbevent_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tbevent_timestamp
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_timestamp
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sim_1/new/tbevent_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tbevent_timestamp
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_timestamp
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sim_1/new/tbevent_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tbevent_timestamp
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_timestamp
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_timestamp
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_timestamp
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sim_1/new/tbevent_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tbevent_timestamp
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_timestamp
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sim_1/new/tbevent_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tbevent_timestamp
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_timestamp
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sim_1/new/tbevent_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tbevent_timestamp
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_timestamp
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_timestamp
+ERROR: [VRFC 10-568] digit 'D' is larger than base in 8#7D# [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:43]
+ERROR: [VRFC 10-568] digit 'C' is larger than base in 8#7C# [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:44]
+ERROR: [VRFC 10-1412] syntax error near FIFO_SYNC_MACRO_inst [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:84]
+ERROR: [VRFC 10-91] di is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:111]
+ERROR: [VRFC 10-91] wren is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:112]
+ERROR: [VRFC 10-91] clk is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:113]
+ERROR: [VRFC 10-91] prescaler_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:118]
+ERROR: [VRFC 10-91] prescaler_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:120]
+ERROR: [VRFC 10-91] dbus_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:115]
+ERROR: [VRFC 10-91] prescaler_reg_out_p_counter is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:129]
+ERROR: [VRFC 10-91] prescaler_reg_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:130]
+ERROR: [VRFC 10-91] prescaler_reg_out_p_counter is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:133]
+ERROR: [VRFC 10-91] prescaler_reg_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:134]
+ERROR: [VRFC 10-91] prescaler_reg_out_p_counter is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:136]
+ERROR: [VRFC 10-91] prescaler_reg_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:137]
+ERROR: [VRFC 10-91] prescaler_reg_out_p_counter is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:132]
+ERROR: [VRFC 10-91] event_counter_reset is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:128]
+ERROR: [VRFC 10-91] prescaler_reg_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:124]
+ERROR: [VRFC 10-91] dbus_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:149]
+INFO: [#UNDEF] Sorry, too many errors..
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_timestamp
+ERROR: [VRFC 10-1412] syntax error near FIFO_SYNC_MACRO_inst [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:84]
+ERROR: [VRFC 10-91] di is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:111]
+ERROR: [VRFC 10-91] wren is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:112]
+ERROR: [VRFC 10-91] clk is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:113]
+ERROR: [VRFC 10-91] prescaler_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:118]
+ERROR: [VRFC 10-91] prescaler_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:120]
+ERROR: [VRFC 10-91] dbus_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:115]
+ERROR: [VRFC 10-91] prescaler_reg_out_p_counter is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:129]
+ERROR: [VRFC 10-91] prescaler_reg_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:130]
+ERROR: [VRFC 10-91] prescaler_reg_out_p_counter is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:133]
+ERROR: [VRFC 10-91] prescaler_reg_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:134]
+ERROR: [VRFC 10-91] prescaler_reg_out_p_counter is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:136]
+ERROR: [VRFC 10-91] prescaler_reg_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:137]
+ERROR: [VRFC 10-91] prescaler_reg_out_p_counter is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:132]
+ERROR: [VRFC 10-91] event_counter_reset is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:128]
+ERROR: [VRFC 10-91] prescaler_reg_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:124]
+ERROR: [VRFC 10-91] dbus_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:149]
+ERROR: [VRFC 10-91] dbus_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:151]
+ERROR: [VRFC 10-91] dbus_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:156]
+INFO: [#UNDEF] Sorry, too many errors..
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_timestamp
+ERROR: [VRFC 10-1412] syntax error near FIFO_SYNC_MACRO_inst [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:86]
+ERROR: [VRFC 10-91] di is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:113]
+ERROR: [VRFC 10-91] wren is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:114]
+ERROR: [VRFC 10-91] clk is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:115]
+ERROR: [VRFC 10-91] prescaler_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:120]
+ERROR: [VRFC 10-91] prescaler_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:122]
+ERROR: [VRFC 10-91] dbus_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:117]
+ERROR: [VRFC 10-91] prescaler_reg_out_p_counter is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:131]
+ERROR: [VRFC 10-91] prescaler_reg_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:132]
+ERROR: [VRFC 10-91] prescaler_reg_out_p_counter is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:135]
+ERROR: [VRFC 10-91] prescaler_reg_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:136]
+ERROR: [VRFC 10-91] prescaler_reg_out_p_counter is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:138]
+ERROR: [VRFC 10-91] prescaler_reg_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:139]
+ERROR: [VRFC 10-91] prescaler_reg_out_p_counter is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:134]
+ERROR: [VRFC 10-91] event_counter_reset is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:130]
+ERROR: [VRFC 10-91] prescaler_reg_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:126]
+ERROR: [VRFC 10-91] dbus_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:151]
+ERROR: [VRFC 10-91] dbus_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:153]
+ERROR: [VRFC 10-91] dbus_out is not declared [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:158]
+INFO: [#UNDEF] Sorry, too many errors..
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_timestamp
+ERROR: [VRFC 10-1471] type error near do ; current type std_logic; expected type std_logic_vector [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:98]
+ERROR: [VRFC 10-1471] type error near rdcount ; current type std_logic; expected type std_logic_vector [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:101]
+ERROR: [VRFC 10-1471] type error near wrcount ; current type std_logic; expected type std_logic_vector [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:103]
+ERROR: [VRFC 10-1471] type error near di ; current type std_logic; expected type std_logic_vector [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:106]
+ERROR: [VRFC 10-1471] type error near fifo_buffer ; current type fiforecord; expected type std_logic [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:113]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:40]
+INFO: [VRFC 10-240] VHDL file /home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_timestamp
+ERROR: [VRFC 10-1471] type error near do ; current type std_logic; expected type std_logic_vector [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:98]
+ERROR: [VRFC 10-1471] type error near rdcount ; current type std_logic; expected type std_logic_vector [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:101]
+ERROR: [VRFC 10-1471] type error near wrcount ; current type std_logic; expected type std_logic_vector [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:103]
+ERROR: [VRFC 10-1471] type error near di ; current type std_logic; expected type std_logic_vector [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:106]
+ERROR: [VRFC 10-1471] type error near fifo_buffer ; current type fiforecord; expected type std_logic [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:113]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:40]
+INFO: [VRFC 10-240] VHDL file /home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_timestamp
+ERROR: [VRFC 10-1471] type error near fifo_buffer ; current type fiforecord; expected type std_logic_vector [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:113]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:40]
+INFO: [VRFC 10-240] VHDL file /home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_timestamp
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sim_1/new/tbevent_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tbevent_timestamp
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_timestamp
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_timestamp
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sim_1/new/tbevent_timestamp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tbevent_timestamp

@@ -28,7 +28,12 @@ entity zynq_top is
     MGTTX2_P     : out std_logic;  -- JX3 pin 25,  Zynq AA5
     MGTTX2_N     : out std_logic;  -- JX3 pin 27,  Zynq AB5
     MGTRX2_P     : in std_logic;   -- JX3 pin 20,  Zynq AA9
-    MGTRX2_N     : in std_logic    -- JX3 pin 22,  Zynq AB9
+    MGTRX2_N     : in std_logic;    -- JX3 pin 22,  Zynq AB9
+    
+    event_rxd       : out std_logic_vector(7 downto 0);  -- Received event code
+    event_clk_out   : out std_logic -- Event clock output, delay compensated
+
+
     );
 end zynq_top;
 
@@ -149,7 +154,7 @@ architecture structure of zynq_top is
   
   signal event_link_ok : std_logic;
 
-  signal event_rxd       : std_logic_vector(7 downto 0);
+  signal local_event_rxd       : std_logic_vector(7 downto 0);
   signal dbus_rxd        : std_logic_vector(7 downto 0);
   signal databuf_rxd     : std_logic_vector(7 downto 0);
   signal databuf_rx_k    : std_logic;
@@ -190,10 +195,10 @@ architecture structure of zynq_top is
 begin
 
   -- ILA debug core
-  i_ila : ila_0
-    port map (
-      CLK => event_clk,
-      probe0 => TRIG0);
+--  i_ila : ila_0
+--    port map (
+--      CLK => event_clk,
+--      probe0 => TRIG0);
 
   i_bufg : bufg
     port map (
@@ -211,7 +216,7 @@ begin
       event_clk_out => event_clk,
       
       -- Receiver side connections
-      event_rxd => event_rxd,
+      event_rxd => local_event_rxd,
       dbus_rxd => dbus_rxd,
       databuf_rxd => databuf_rxd,
       databuf_rx_k => databuf_rx_k,
@@ -279,12 +284,14 @@ begin
 
   gnd <= '0';
   vcc <= '1';
+  event_rxd <= local_event_rxd;
+  event_clk_out <= event_clk;
   
   databuf_rx_mode <= '1';
   databuf_tx_mode <= '1';
   dc_mode <= '1';
 
-  delay_comp_target <= X"02100000";
+  delay_comp_target <= X"00050000"; --originally 02100000
 
   dbus_txd <= X"00";
   databuf_txd <= X"00";
@@ -309,9 +316,9 @@ begin
     variable count : std_logic_vector(31 downto 0) := X"FFFFFFFF";
   begin
     if rising_edge(sys_clk) then
-      rx_clear_viol <= PL_PB1;
-      tx_reset <= PL_PB2;
-      sys_reset <= PL_PB3;
+      rx_clear_viol <= PL_PB1; -- was PL_PB1 but we're not pressing these buttons..
+      tx_reset <= PL_PB3; -- was PL_PB3 but we're not pressing these buttons..
+      sys_reset <= PL_PB3; -- was PL_PB3 but we're not pressing these buttons..
       PL_LED1 <= rx_violation;
       PL_LED2 <= rx_link_ok;
 --      PL_LED3 <= event_rxd(0);
@@ -323,7 +330,7 @@ begin
   process (event_clk)
   begin
     if rising_edge(event_clk) then
-      TRIG0(7 downto 0) <= event_rxd;
+      TRIG0(7 downto 0) <= local_event_rxd;
       TRIG0(15 downto 8) <= dbus_rxd;
       TRIG0(23 downto 16) <= databuf_rxd;
       TRIG0(24) <= databuf_rx_k;
@@ -343,7 +350,7 @@ begin
     end if;
   end process;
 
-  process (event_clk, event_rxd)
+  process (event_clk, local_event_rxd)
     variable pulse_cnt : std_logic_vector(19 downto 0) := X"00000";
   begin
     if rising_edge(event_clk) then
@@ -353,7 +360,7 @@ begin
       if pulse_cnt(pulse_cnt'high) = '1' then
 	pulse_cnt := pulse_cnt - 1;
       end if;
-      if event_rxd = X"01" then
+      if local_event_rxd = X"01" then
 	pulse_cnt := X"FFFFF";
       end if;
       if rx_link_ok = '0' then

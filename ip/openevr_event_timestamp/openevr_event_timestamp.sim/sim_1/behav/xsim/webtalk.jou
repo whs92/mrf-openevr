@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Nov 15 14:17:46 2019
+# Process ID: 21650
+# Current directory: /home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.sim/sim_1/behav/xsim/xsim.dir/tbevent_timestamp_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.sim/sim_1/behav/xsim/xsim.dir/tbevent_timestamp_behav/webtalk/xsim_webtalk.tcl -notrace

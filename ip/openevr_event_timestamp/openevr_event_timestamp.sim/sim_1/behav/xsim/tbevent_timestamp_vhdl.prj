@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd" \
+"../../../../openevr_event_timestamp.srcs/sim_1/new/tbevent_timestamp.vhd" \
+
+# Do not sort compile order
+nosort

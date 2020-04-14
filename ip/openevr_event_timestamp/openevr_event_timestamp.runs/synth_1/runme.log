@@ -1,0 +1,318 @@
+
+*** Running vivado
+    with args -log event_timestamp.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source event_timestamp.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source event_timestamp.tcl -notrace
+Command: synth_design -top event_timestamp -part xc7z030sbg485-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z030'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z030'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9872 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1256.246 ; gain = 76.996 ; free physical = 965 ; free virtual = 23160
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'event_timestamp' [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:41]
+	Parameter ALMOST_EMPTY_OFFSET bound to: 16'b0000000010000000 
+	Parameter ALMOST_FULL_OFFSET bound to: 16'b0000000010000000 
+	Parameter DATA_WIDTH bound to: 72 - type: integer 
+	Parameter DEVICE bound to: 7SERIES - type: string 
+	Parameter DO_REG bound to: 0 - type: integer 
+	Parameter FIFO_SIZE bound to: 36Kb - type: string 
+	Parameter INIT bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter SIM_MODE bound to: SAFE - type: string 
+	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'FIFO_SYNC_MACRO' declared at '/opt/Xilinx/Vivado/2017.4/data/vhdl/src/unimacro/FIFO_SYNC_MACRO.vhd:36' bound to instance 'FIFO_SYNC_MACRO_inst' of component 'FIFO_SYNC_MACRO' [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'unimacro_FIFO_SYNC_MACRO' [/opt/Xilinx/Vivado/2017.4/data/vhdl/src/unimacro/FIFO_SYNC_MACRO.vhd:69]
+	Parameter ALMOST_FULL_OFFSET bound to: 16'b0000000010000000 
+	Parameter ALMOST_EMPTY_OFFSET bound to: 16'b0000000010000000 
+	Parameter DATA_WIDTH bound to: 72 - type: integer 
+	Parameter DEVICE bound to: 7SERIES - type: string 
+	Parameter DO_REG bound to: 0 - type: integer 
+	Parameter FIFO_SIZE bound to: 36Kb - type: string 
+	Parameter INIT bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter SIM_MODE bound to: SAFE - type: string 
+	Parameter ALMOST_EMPTY_OFFSET bound to: 16'b0000000010000000 
+	Parameter ALMOST_FULL_OFFSET bound to: 16'b0000000010000000 
+	Parameter DATA_WIDTH bound to: 72 - type: integer 
+	Parameter DO_REG bound to: 0 - type: integer 
+	Parameter EN_ECC_READ bound to: 0 - type: bool 
+	Parameter EN_ECC_WRITE bound to: 0 - type: bool 
+	Parameter EN_SYN bound to: 1 - type: bool 
+	Parameter FIFO_MODE bound to: FIFO36_72 - type: string 
+	Parameter FIRST_WORD_FALL_THROUGH bound to: 0 - type: bool 
+	Parameter INIT bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter IS_RDCLK_INVERTED bound to: 1'b0 
+	Parameter IS_RDEN_INVERTED bound to: 1'b0 
+	Parameter IS_RSTREG_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter IS_WRCLK_INVERTED bound to: 1'b0 
+	Parameter IS_WREN_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'fifo_36_bl_1' to cell 'FIFO36E1' [/opt/Xilinx/Vivado/2017.4/data/vhdl/src/unimacro/FIFO_SYNC_MACRO.vhd:888]
+INFO: [Synth 8-256] done synthesizing module 'unimacro_FIFO_SYNC_MACRO' (1#1) [/opt/Xilinx/Vivado/2017.4/data/vhdl/src/unimacro/FIFO_SYNC_MACRO.vhd:69]
+WARNING: [Synth 8-614] signal 'dbus' is read in the process but is not in the sensitivity list [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:147]
+WARNING: [Synth 8-614] signal 'event_code' is read in the process but is not in the sensitivity list [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:147]
+WARNING: [Synth 8-3848] Net RDEN in module/entity event_timestamp does not have driver. [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'event_timestamp' (2#1) [/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.srcs/sources_1/new/event_timestamp.vhd:41]
+WARNING: [Synth 8-3331] design event_timestamp has unconnected port MAP14
+WARNING: [Synth 8-3331] design event_timestamp has unconnected port dbus[7]
+WARNING: [Synth 8-3331] design event_timestamp has unconnected port dbus[6]
+WARNING: [Synth 8-3331] design event_timestamp has unconnected port dbus[5]
+WARNING: [Synth 8-3331] design event_timestamp has unconnected port dbus[3]
+WARNING: [Synth 8-3331] design event_timestamp has unconnected port dbus[2]
+WARNING: [Synth 8-3331] design event_timestamp has unconnected port dbus[1]
+WARNING: [Synth 8-3331] design event_timestamp has unconnected port dbus[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1297.777 ; gain = 118.527 ; free physical = 977 ; free virtual = 23174
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1297.777 ; gain = 118.527 ; free physical = 976 ; free virtual = 23173
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z030sbg485-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1305.781 ; gain = 126.531 ; free physical = 976 ; free virtual = 23173
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "prescaler_reg_out" won't be mapped to RAM because it is too sparse
+INFO: [Device 21-403] Loading part xc7z030sbg485-1
+INFO: [Synth 8-5546] ROM "seconds_shift_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dbus_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "timestamp_event_counter" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1323.812 ; gain = 144.562 ; free physical = 967 ; free virtual = 23164
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module event_timestamp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 400 (col length:80)
+BRAMs: 530 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "prescaler_reg_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "timestamp_event_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "seconds_shift_reg" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design event_timestamp has unconnected port MAP14
+WARNING: [Synth 8-3331] design event_timestamp has unconnected port dbus[7]
+WARNING: [Synth 8-3331] design event_timestamp has unconnected port dbus[6]
+WARNING: [Synth 8-3331] design event_timestamp has unconnected port dbus[5]
+WARNING: [Synth 8-3331] design event_timestamp has unconnected port dbus[3]
+WARNING: [Synth 8-3331] design event_timestamp has unconnected port dbus[2]
+WARNING: [Synth 8-3331] design event_timestamp has unconnected port dbus[1]
+WARNING: [Synth 8-3331] design event_timestamp has unconnected port dbus[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1474.594 ; gain = 295.344 ; free physical = 760 ; free virtual = 22985
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1474.594 ; gain = 295.344 ; free physical = 760 ; free virtual = 22985
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1474.594 ; gain = 295.344 ; free physical = 758 ; free virtual = 22983
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1474.594 ; gain = 295.344 ; free physical = 761 ; free virtual = 22986
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1474.594 ; gain = 295.344 ; free physical = 761 ; free virtual = 22986
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1474.594 ; gain = 295.344 ; free physical = 761 ; free virtual = 22986
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1474.594 ; gain = 295.344 ; free physical = 761 ; free virtual = 22986
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1474.594 ; gain = 295.344 ; free physical = 761 ; free virtual = 22986
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1474.594 ; gain = 295.344 ; free physical = 761 ; free virtual = 22986
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    14|
+|3     |FIFO36E1 |     1|
+|4     |LUT1     |     2|
+|5     |LUT2     |     2|
+|6     |LUT3     |     3|
+|7     |LUT4     |     1|
+|8     |LUT5     |     3|
+|9     |LUT6     |     6|
+|10    |FDRE     |   185|
+|11    |IBUF     |    29|
++------+---------+------+
+
+Report Instance Areas: 
++------+-----------------------+-------------------------+------+
+|      |Instance               |Module                   |Cells |
++------+-----------------------+-------------------------+------+
+|1     |top                    |                         |   248|
+|2     |  FIFO_SYNC_MACRO_inst |unimacro_FIFO_SYNC_MACRO |     1|
++------+-----------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1474.594 ; gain = 295.344 ; free physical = 761 ; free virtual = 22986
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1474.594 ; gain = 295.344 ; free physical = 763 ; free virtual = 22988
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1474.602 ; gain = 295.344 ; free physical = 763 ; free virtual = 22988
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1614.766 ; gain = 448.891 ; free physical = 713 ; free virtual = 22949
+INFO: [Common 17-1381] The checkpoint '/home/adam/Tresbox/vivado/openevr_event_timestamp/openevr_event_timestamp.runs/synth_1/event_timestamp.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file event_timestamp_utilization_synth.rpt -pb event_timestamp_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1638.777 ; gain = 0.000 ; free physical = 712 ; free virtual = 22949
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 18 10:42:52 2019...

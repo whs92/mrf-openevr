@@ -264,10 +264,10 @@ architecture structure of transceiver_dc_k7 is
 begin
 
   -- ILA debug core
-  i_ila : ila_0
-    port map (
-      CLK => txusrclk,
-      probe0 => TRIG0);
+--  i_ila : ila_0
+--    port map (
+--      CLK => txusrclk,
+--      probe0 => TRIG0);
 
   gtxe2_X0Y0_i :GTXE2_CHANNEL
     generic map
