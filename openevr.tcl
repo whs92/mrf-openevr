@@ -166,7 +166,7 @@ if {[string equal [get_filesets -quiet sources_1] ""]} {
 
 # Set IP repository paths
 set obj [get_filesets sources_1]
-set_property "ip_repo_paths" "[file normalize "$origin_dir/../ip_repo/rx_to_stream_1.0"] [file normalize "$origin_dir/../../vivado_proj/ips"] [file normalize "$origin_dir/../../Tresbox/vivado/openevr_test_datagen"] [file normalize "$origin_dir/../ip"]" $obj
+set_property "ip_repo_paths" "[file normalize "$origin_dir/ip"]" $obj
 
 # Rebuild user ip_repo's index before adding any source files
 update_ip_catalog -rebuild
@@ -192,7 +192,7 @@ set files [list \
  "[file normalize "$origin_dir/vhdl/zynq_top.vhd"]"\
  "[file normalize "$origin_dir/vhdl/design_1_wrapper.vhd"]"\
  "[file normalize "$origin_dir/vhdl/packingMachine.vhd"]"\
- "[file normalize "$origin_dir/vhdl/ip/gtwizard_0/gtwizard_0.xci"]"\
+ "[file normalize "$origin_dir/ip/gtwizard_0/gtwizard_0.xci"]"\
 ]
 set imported_files [import_files -fileset sources_1 $files]
 
