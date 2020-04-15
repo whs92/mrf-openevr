@@ -38,4 +38,5 @@ Should build but there have been known issues of rebuilding projects from TCL sc
 * `board_files` contains the custom board definitions for em.avnet.com:picozed_7030_fmc2:part0:1.1
 * `build` contains generated bitstreams
 * `ip` contains the ip blocks used in the design (both custom and Vivado generated .xci)
+* `software` contains the C source to set up the hardware and pull events + decoded timestamps via interrupt driven mechanism
 * `vhdl` contains source files, simulation files and constraints
