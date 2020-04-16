@@ -33,10 +33,20 @@ or open Vivado and in the console:
 A new folder called "openevr" will be created containing the porject files.
 Should build but there have been known issues of rebuilding projects from TCL scripts. If you have problems, use the archive in the releases
 
+
+# SD card
+
+You'll need to write the iso image to an 8gb SD card or make up your own according to to the wiki and the files in the "petalinux" folder.
+
+# Bitstream
+
+Note that the default bitstream on the SD card built into the image.ub is an old version and not the v0.2. You can boot up fine with it but you should reprogram the FPGA with the Hardware Manager after boot using the SmartLynq or JTAG programmer. This is how i've been doing development - just reprogramming the FPGA live (unless we need to change device tree options...)
+
 # Repo Folder Breakdown
 
 * `board_files` contains the custom board definitions for em.avnet.com:picozed_7030_fmc2:part0:1.1
 * `build` contains generated bitstreams
+* `petalinux` contains the device tree required for the project along with the Linux userspace files and SD image
 * `ip` contains the ip blocks used in the design (both custom and Vivado generated .xci)
 * `software` contains the C source to set up the hardware and pull events + decoded timestamps via interrupt driven mechanism
 * `vhdl` contains source files, simulation files and constraints
