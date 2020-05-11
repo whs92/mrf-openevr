@@ -1,5 +1,5 @@
 # mrf-openevr
-Open source Event Receiver implementation
+Open source Event Receiver implementation based on the [open EVR by MRF](https://github.com/jpietari/mrf-openevr)
 
 ## Prerequisites
 
