@@ -1,6 +1,19 @@
 # mrf-openevr
 Open source Event Receiver implementation based on the [open EVR by MRF](https://github.com/jpietari/mrf-openevr)
 
+### Notes on Setup
+
+https://epics.anl.gov/meetings/2018-06/talks/06-12/Open-Hardware/MRF.EPICS.2018.pdf 
+
+## Clock Configuration
+
+MMCM primitive is configured in evr_dc.vhd
+- In evr_dc.vhd connect your reference clock to MGTREFCLKx_P/N
+- In evr_dc.vhd configure the input clock period to the MMCM (your ref clock) CLKIN1_PERIOD
+- In evr_dc.vhd configure the multiplier and divider of the MMCM to achieve your desired event clock.CLKFBOUT_MULT_F and CLKOUT0_DIVIDE_F 
+
+For more details on clock setup see https://www.xilinx.com/support/documentation/user_guides/ug472_7Series_Clocking.pdf
+
 ## Prerequisites
 
 ### Hardware
